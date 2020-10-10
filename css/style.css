@@ -37,7 +37,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family:"rubik", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   background-color: #fff;
@@ -67,6 +67,284 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+.site-header{
+  padding:48px 0;
+}
+.header-container{
+  display: flex;
+  align-items: center;
+}
+.logo-img{
+  display: block;
+  width: 149px;
+  height: 25px;
+
+}
+.header-nav{
+  display: flex;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 17px;
+  margin-left: auto;
+}
+.nav-list{
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-right: 38px;
+}
+.nav-item + .nav-item{
+   margin-left: 38px;
+}
+.nav-link{
+  text-decoration: none;
+  color: #242A45;
+  padding: 10px;
+}
+.nav-link:hover{
+  color: #FA5959;
+}
+.button-red{
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #FA5959;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.intro-section{
+  background-image: url("../img/group.png");
+  background-repeat: no-repeat;
+  background-size: 671px 485px;
+  background-position: right top;
+  padding-top: 60px;
+  padding-bottom: 203px;
+}
+.intro-info{
+  max-width: 540px;
+}
+.intro-heading{
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 52px;
+  color: #242A45;
+}
+.intro-text{
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #242A45;
+  opacity: 0.5;
+}
+
+.button-blue{
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #5267DF;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+}
+.button-white{
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #F7F7F7;
+  text-decoration: none;
+  color: #242A45;
+  border-radius: 5px;
+  margin-left: 16px;
+}
+.main-heading{
+  margin-top: 0;
+  margin-bottom: 16px;
+  text-align: center;
+  color: #242A45;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 52px;
+}
+.main-text{
+  margin-top: 0;
+  margin-bottom: 72px;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #242A45;
+  opacity: 0.5;
+}
+.features-list{
+  max-width: 730px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  list-style-type: none;
+  border-bottom: 1px solid grey;
+}
+.features-item{
+   padding-bottom: 22px;
+}
+.features-first-item{
+  position: relative;
+  z-index: 1;
+}
+.features-first-item .features-link::after{
+  position: absolute;
+  z-index: 1;
+  height: 4px;
+  width: 243px;
+  left: 0;
+  top: 44px;
+  border-radius: 0px;
+  background-color: #FA5959;
+  content: "";
+}
+.features-link{
+  padding: 10px;
+  font-size: 16px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0.533333px;
+  color: #242A45;
+  text-decoration: none;
+}
+.features-link:hover{
+  color: #FA5959;
+}
+.simple-box{
+  padding-top: 129px;
+  padding-bottom: 200px;
+  background-image: url("../img/groups.png");
+  background-repeat: no-repeat;
+  background-size: 671px 485px;
+  background-position: left bottom;
+}
+
+.simple-info{
+  max-width: 445px;
+  margin-left: auto;
+}
+.simple-info-heading{
+ margin-top: 0;
+ margin-bottom: 16px;
+ font-weight: 500;
+ font-size: 32px;
+ line-height: 52px;
+ color: #242A45;
+}
+.simple-info-text{
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  opacity: 0.5;
+  color: #242A45;
+}
+.download-section{
+  padding: 149px 0;
+}
+.download-list{
+  display: flex;
+  align-items: flex-start;
+  width: 911px;
+  display: flex;
+  margin: 0;
+  list-style-type: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+.download-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 24px;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px -5px rgba(73, 93, 207, 0.20012);
+  border-radius: 15px;
+}
+.download-firefox-item{
+  margin-top: 40px;
+}
+.download-opera-item{
+  margin-top: 80px;
+}
+.download-item + .download-item{
+  margin-left: 34px;
+}
+.download-link{
+  text-decoration: none;
+}
+.download-link::before{
+  width: 105px;
+  height: 100px;
+  display:block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  content: "";
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+  margin-top: 49px;
+}
+.download-chrome-item .download-link::before{
+  background-image: url("../img/chrome.png");
+}
+.download-firefox-item .download-link::before{
+  background-image: url("../img/firefox.png");
+}
+.download-opera-item .download-link::before{
+  background-image: url("../img/opera.png");
+}
+
+.download-link::after{
+  display: block;
+  width: 280px;
+  height: 4px;
+  background-image: url("../img/combinedshape.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-bottom: 24px;
+  content: "";
+}
+
+.download-list-heading{
+  margin-top: 0;
+  margin-bottom: 6px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  color: #242A45;
+  text-align: center;
+}
+.download-list-text{
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-size: 15px;
+  line-height: 28px;
+  text-align: center;
+  color: #242A45;
+  opacity: 0.5;
+}
+
+
+
+
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -74,28 +352,7 @@ only screen and (   min--moz-device-pixel-ratio: 2),
 only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) {
+only screen and (                min-resolution: 2dppx){
 
-}
-.table{
-  display: flex;
-  width: 100%;
-  border: 1px solid #000;
-  border-collapse: collapse;
-}
-.thead{
-  display: flex;
-  flex-direction: column;
-}
-.tbody{
-  display: flex;
-  flex-direction: column;
-}
-.th{
-  border:  1px solid #000;
-
-}
-.td{
-  border:  1px solid #000;
 
 }

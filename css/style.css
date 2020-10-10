@@ -80,7 +80,7 @@ img {
   height: 25px;
 
 }
-.header-nav{
+.main-nav{
   display: flex;
   white-space: nowrap;
   text-transform: uppercase;
@@ -114,13 +114,16 @@ img {
   text-decoration: none;
   color: #fff;
   border-radius: 5px;
+  border: 2px solid transparent;
 }
-
+/* .site-main{
+  padding-bottom: 200px;
+} */
 .intro-section{
   background-image: url("../img/group.png");
   background-repeat: no-repeat;
-  background-size: 671px 485px;
-  background-position: right top;
+  background-size: auto 485px;
+  background-position: calc(50% + 600px) center;
   padding-top: 60px;
   padding-bottom: 203px;
 }
@@ -146,11 +149,18 @@ img {
 
 .button-blue{
   display: inline-block;
-  padding: 10px 25px;
+  vertical-align: baseline;
+  padding: 8px 25px;
   background-color: #5267DF;
   text-decoration: none;
   color: #fff;
   border-radius: 5px;
+  border:2px solid transparent;
+}
+.button-blue:hover{
+  color: #5267DF;
+  background-color: #fff;
+  border:2px solid #5267DF ;
 }
 .button-white{
   display: inline-block;
@@ -183,53 +193,42 @@ img {
   opacity: 0.5;
 }
 .features-list{
-  max-width: 730px;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   margin: 0;
-  margin-left: auto;
-  margin-right: auto;
   padding: 0;
   list-style-type: none;
-  border-bottom: 1px solid grey;
-}
+ }
 .features-item{
-   padding-bottom: 22px;
+   border-bottom: 1px solid #ccc;
+
 }
-.features-first-item{
-  position: relative;
-  z-index: 1;
+.features-item-active .features-link{
+  border-bottom-color: #FA5959;
 }
-.features-first-item .features-link::after{
-  position: absolute;
-  z-index: 1;
-  height: 4px;
-  width: 243px;
-  left: 0;
-  top: 44px;
-  border-radius: 0px;
-  background-color: #FA5959;
-  content: "";
-}
+
 .features-link{
-  padding: 10px;
-  font-size: 16px;
-  line-height: 17px;
-  text-align: center;
-  letter-spacing: 0.533333px;
-  color: #242A45;
-  text-decoration: none;
+    display: block;
+    padding: 27px 40px;
+    border-bottom: 4px solid transparent;
+    margin-bottom: -1px;
+    text-decoration: none;
+    text-align: center;
+    color: #242A45;
+
 }
 .features-link:hover{
   color: #FA5959;
 }
 .simple-box{
+  margin-top: 72px;
   padding-top: 129px;
   padding-bottom: 200px;
   background-image: url("../img/groups.png");
   background-repeat: no-repeat;
-  background-size: 671px 485px;
-  background-position: left bottom;
+  background-size: auto 485px;
+  background-position:calc(50% - 600px) center;
 }
 
 .simple-info{
@@ -341,6 +340,187 @@ img {
   color: #242A45;
   opacity: 0.5;
 }
+.questions-section{
+  padding-bottom: 150px;
+}
+.questions-container{
+  position: relative;
+  z-index: 1;
+}
+.questions-list{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  max-width: 540px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 54px;
+  padding: 0;
+  list-style-type: none;
+  border-top: 1px solid rgba(36, 42, 69, 0.1);
+}
+.questions-button{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: none;
+  background-color:#fff;
+  border-bottom: 1px solid rgba(36, 42, 69, 0.1);
+  padding: 15px 0;
+  text-align: left;
+  font-size: 18px;
+  line-height: 32px;
+  color: #242A45;
+}
+.questions-button:hover{
+  color: #FA5959;
+}
+.questions-button:focus{
+  outline: none;
+  border-bottom: 1px solid rgba(36, 42, 69, 0.5);
+}
+.questions-button::after{
+  display: block;
+  width: 16px;
+  height: 8px;
+  background-image: url(../img/path.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:center;
+  margin-left: auto;
+  content: "";
+}
+.questions-link{
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  transform: translate(-50%);
+  margin-bottom: 150px;
+}
+.join-section{
+  width: 100%;
+  background-color:  #5267DF;
+  text-align: center;
+  padding: 58px 499px 74px 499px;
+}
+.join-text{
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 40px;
+  color: #fff;
+  letter-spacing: 5px;
+}
+.join-heading{
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  color: #fff;
+  letter-spacing: -0.1px;
+}
+.join-form{
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+.email-input{
+  border: none;
+  padding: 10px 20px;
+  padding-right:80px ;
+  border-radius: 5px;
+  margin-right: 16px;
+  color: #242A45;
+}
+
+::placeholder {
+  padding: 10px 20px;
+  padding-right:80px ;
+  font-size: 14px;
+  line-height: 28px;
+  color: rgba(36, 42, 69, 0.250109);
+  opacity: 1;
+}
+.email-input:focus{
+  outline: none;
+}
+.real-button{
+  border: none;
+  padding: 10px 24px;
+  border: 2px solid transparent;
+}
+.button-red:hover{
+  background-color: #fff;
+  border: 2px solid #FA5959;
+  color: #FA5959;
+}
+.site-footer{
+  width: 100%;
+  background-color:#242A45;
+  padding: 32px 0;
+}
+.footer-container{
+  display: flex;
+  align-items: center;
+}
+.footer-logo-img{
+  display: block;
+  width: 148px;
+  height: 25px;
+}
+.footer-nav{
+margin-left: 60px;
+}
+.footer-nav-list{
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.footer-nav-item + .footer-nav-item{
+  margin-left: 40px;
+}
+.footer-nav-link{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 17px;
+  padding: 10px;
+}
+.footer-nav-link:hover{
+  color: #FA5959;
+}
+.socials-list{
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  margin-left: auto;
+}
+.socials-list-item + .socials-list-item  {
+margin-left: 40px;
+}
+.socials-img{
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+.twitter{
+  height: 20px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -353,6 +533,20 @@ only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx){
-
+  .intro-section{
+    background-image: url("../img/group.png");
+  }
+  .simple-box{
+    background-image: url("../img/groups@2x.png");
+  }
+  .download-chrome-item .download-link::before{
+    background-image: url("../img/chrome@2x.png");
+  }
+  .download-firefox-item .download-link::before{
+    background-image: url("../img/firefox@2x.png");
+  }
+  .download-opera-item .download-link::before{
+    background-image: url("../img/opera@2x.png");
+  }
 
 }
